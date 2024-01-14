@@ -54,6 +54,9 @@ const Navbar = ({ links, className, ...props }: NavProps) => {
                                 stretch: true,
                             })}
                             href={link.path}
+                            onClick={() => {
+                                setIsOpen((prev) => !prev);
+                            }}
                         >
                             {link.title}
                         </Link>
